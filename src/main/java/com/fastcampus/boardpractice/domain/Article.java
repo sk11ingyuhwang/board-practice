@@ -41,4 +41,11 @@ public class Article {
         this.modifiedBy = createdBy;
     }
 
+    public static Article of(String title, String content, Integer viewCount, Integer likeCount, String hashtag, String createdBy) {
+        Article article = new Article(title, content, viewCount, likeCount, hashtag, createdBy);
+        article.createdAt = LocalDateTime.now(); // TODO: mocking을 위해 시간을 강제로 세팅한 코드는 추후 수정
+        article.modifiedAt = article.createdAt; // TODO: mocking을 위해 시간을 강제로 세팅한 코드는 추후 수정
+        return article;
+    }
+
 }
