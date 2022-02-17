@@ -7,3 +7,5 @@ spring:
     password: q1w2e3r4
   thymeleaf:
     cache: false
+  thymeleaf3:
+    decoupled-logic: true
