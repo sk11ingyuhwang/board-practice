@@ -5,3 +5,5 @@ spring:
     url: jdbc:mysql://localhost:3306/boardsample
     username: uno
     password: q1w2e3r4
+  thymeleaf:
+    cache: false
